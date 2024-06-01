@@ -18,7 +18,7 @@ const mongoose = require('mongoose');
 const socketio = require('socket.io')
 const io = socketio(http);
 const mongoDB =
-  "mongodb+srv://tester:rjqoHLyO8Q5uYqEm@cluster0.5i9l4.mongodb.net/chat-database?retryWrites=true&w=majority";
+  "..";
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => console.log('connected')).catch(err => console.log(err))
 const { addUser, getUser, removeUser } = require('./helper');
 const Message = require('./models/Message');
